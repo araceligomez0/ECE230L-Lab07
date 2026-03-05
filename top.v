@@ -3,7 +3,7 @@ module top(
     output [13:0] led
 );
 
-// ---------------- HALF SUBTRACTOR ----------------
+// HALF SUBTRACTOR 
 half_sub HS(
     .A(sw[0]),
     .B(sw[1]),
@@ -38,3 +38,4 @@ twos_compliment TC(
 assign led[13:6] = TC_out;
 
 endmodule
+
