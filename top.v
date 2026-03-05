@@ -11,7 +11,7 @@ half_sub HS(
     .Borrow(led[1])
 );
 
-//ONE'S COMPLEMENT ADDER
+// ONE'S COMPLEMENT ADDER
 wire [3:0] A_ones = {sw[5], sw[4], sw[3], sw[2]};
 wire [3:0] B_ones = {sw[9], sw[8], sw[7], sw[6]};
 wire [3:0] S_ones;
@@ -38,4 +38,5 @@ twos_compliment TC(
 assign led[13:6] = TC_out;
 
 endmodule
+
 
